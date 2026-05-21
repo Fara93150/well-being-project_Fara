@@ -1,0 +1,4 @@
+
+numpy
+scikit-learn
+# Aucune dépendance externe — full vanilla Python
