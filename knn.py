@@ -17,3 +17,4 @@ class KNN :
         for _, neighbor_index in k_nearest:
             labels.append(self.y_train.iloc[neighbor_index])
         return max(labels, key=labels.count)
+    
