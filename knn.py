@@ -13,3 +13,7 @@ class KNN :
          distances.append((((X - point)**2)**0.5, neighbor_index))
         distances.sort()
         k_nearest = distances[:self.k]
+        labels = []
+        for _, neighbor_index in k_nearest:
+            labels.append(self.y_train.iloc[neighbor_index])
+        return max(labels, key=labels.count)
